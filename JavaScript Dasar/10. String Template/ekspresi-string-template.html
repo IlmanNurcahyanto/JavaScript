@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Memanggil Ekspresi Ataupun Operasi Matematika Dengan String Template</title>
+</head>
+<body>
+<script>
+
+	// String Template digunakan untuk mensubtitusi data dari luar string ke dalam string
+	// Seperti mengambil data variable, Operasi Matematika, DLL
+	// String Template bisa dibuat dengan menggunakan tanda backtick ( `` )
+	// Untuk memanggil Variable bisa menggunakan tanda ${nama_variable}
+	
+	// Cara Memanggil Ekspresi Ataupun Operasi Matematika Dengan String Template
+	
+	const ekspresi = 100;
+
+	document.writeln(`${ekspresi > 70}`); // True
+	document.writeln("</br>");
+	
+	document.writeln(`${ekspresi > 200}`); // False
+	document.writeln("</br>");
+	
+	document.writeln(`${300 > 200}`); // True
+	document.writeln("</br>");
+
+</script>
+</body>
+</html>
