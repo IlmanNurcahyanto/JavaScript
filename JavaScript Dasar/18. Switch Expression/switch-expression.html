@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch Expression</title>
+</head>
+<body>
+<script>
+	
+	// Switch Expression bisa digunakan jika kondisinya sederhana, Seperti hanya menggunakan Perbandingan Sama Dengan ( == )
+	// Contohnya Seperti Ini :
+
+	const masukkan = "A";
+
+	switch(masukkan) {
+		case "A" : 
+			document.writeln("<p>Variable Masukkan Anda Bernilai A</p>");
+			break;
+		case "B" : 
+		case "C" : 
+			document.writeln("<p>Variable Masukkan Anda Bernilai B Atau C</p>");
+			break;
+		case "D" : 
+			document.writeln("<p>Variable Masukkan Anda Bernilai D</p>");
+			break;
+		default : 
+			document.writeln("<p>Variable Masukkan Anda Tidak Ada</p>");
+			break;
+	}
+
+</script>
+</body>
+</html>
