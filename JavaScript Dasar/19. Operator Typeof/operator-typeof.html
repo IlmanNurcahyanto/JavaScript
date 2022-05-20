@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operator Typeof</title>
+</head>
+<body>
+<script>
+	
+	// Typeof merupakan operator yang bisa digunakan untuk melihat tipe data sebuah value atau variable
+	// Hasil dari Operator Typeof adalah string tipe datanya
+
+	let data = undefined;
+	let typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Undefined
+
+	data = null;
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Object
+
+	data = [];
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Object
+
+	data = {};
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Object
+
+	data = true;
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Boolean
+
+	data = 25;
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // Number
+
+	data = "Hello World";
+	typeData = typeof data;
+	document.writeln(`<p>${typeData}</p>`); // String
+
+</script>
+</body>
+</html>
