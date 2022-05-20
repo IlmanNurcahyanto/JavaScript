@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cara Mengakses Object</title>
+</head>
+<body>
+<script>
+
+	// Tipe Data Object adalah Tipe Data yang mirip dengan Tipe Data Array
+	// Yang membedakan adalah Index pada Tipe Data Object bisa menggunakan String
+	// Index di Object biasanya disebut Attributes atau Properties, bukan Index
+	// Membuat Object Bisa Menggunakan Kurung Kurawal ( {} )
+	
+	// Jika nama Attributes atau Properties hanya satu kata, Maka bisa mengakses Object dengan menggunakan Tanda Titik ( . )
+	// Tetapi jika lebih dari satu kata pada Attributes atau Properties, Maka bisa mengakses Object dengan menggunakan Kurung Siku ( [] )
+	// Contoh Seperti Ini :
+	
+	// Cara Mengakses / Mengambil Data Object Satu Kata Pada Attributes Atau Properties
+	// nama_object.nama_attributes_atau_properties
+	
+	let objectSatuKata = {
+	NLengkap : "Ilman Nurcahyanto" , 
+	NDepan : "Ilman" ,
+	NBelakang : "Nurcahyanto"
+	};
+	
+	console.info(`Nama Lengkap : ${objectSatuKata.NLengkap}`);
+	console.info(`Nama Depan : ${objectSatuKata.NDepan}`);
+	console.info(`Nama Belakang : ${objectSatuKata.NBelakang}`);
+	
+	// Cara Mengakses / Mengambil Data Object Lebih Dari Satu Kata Pada Attributes Atau Properties
+	// nama_object["nama_attributes_atau_properties"]
+	
+	let objectNama = {
+	"Nama Lengkap" : "Ilman Nurcahyanto" , 
+	"Nama Depan" : "Ilman" ,
+	"Nama Belakang" : "Nurcahyanto"
+	};
+	
+	console.info(`Nama Lengkap : ${objectNama["Nama Lengkap"]}`);
+	console.info(`Nama Depan : ${objectNama["Nama Depan"]}`);
+	console.info(`Nama Belakang : ${objectNama["Nama Belakang"]}`);
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cara Membuat Object</title>
+</head>
+<body>
+<script>
+
+	// Tipe Data Object adalah Tipe Data yang mirip dengan Tipe Data Array
+	// Yang membedakan adalah Index pada Tipe Data Object bisa menggunakan String
+	// Index di Object biasanya disebut Attributes atau Properties, bukan Index
+	// Membuat Object Bisa Menggunakan Kurung Kurawal ( {} )
+
+	// Cara Membuat Object Kosong Tanpa Nilai
+	
+	let objectKosong = {};
+
+	// Cara Membuat Object Dengan Isi Atau Nilai
+	// Jika nama Attributes atau Properties hanya satu kata bisa tanpa menggunakan tanda petik ( "" )
+	// Tapi jika lebih dari satu kata wajib menggunakan tanda petik ( "" )
+	
+	// Attributes atau Properties lebih dari satu kata
+	// "Nama_Attributes_Atau_Properties" : "Isi_Attributes_Atau_Properties"
+	
+	let objectNama = {
+	"Nama Lengkap" : "Ilman Nurcahyanto" , 
+	"Nama Depan" : "Ilman" ,
+	"Nama Belakang" : "Nurcahyanto"
+	};
+	
+	console.table(objectNama);
+	
+	// Attributes atau Properties hanya satu kata
+	// Nama_Attributes_Atau_Properties : "Isi_Attributes_Atau_Properties"
+	
+	let objectSatuKata = {
+	NPanjang : "Ilman Nurcahyanto" , 
+	NDepan : "Ilman" ,
+	NBelakang : "Nurcahyanto"
+	};
+	
+	console.table(objectSatuKata);
+
+</script>
+</body>
+</html>
