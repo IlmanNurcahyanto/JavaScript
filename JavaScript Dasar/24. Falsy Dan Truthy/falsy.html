@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Falsy</title>
+</head>
+<body>
+<script>
+	
+	// Falsy adalah value yang ketika dalam konteks boolean, dia dianggap false
+	
+	// Data Falsy
+	// false ( Boolean false )
+	// 0 , -0 ( Number 0 dan -0 dianggap false )
+	// “” , ‘’ , `` ( Semua string kosong dianggap false )
+	// null ( null dianggap false )
+	// undefined ( undefined dianggap false )
+	// NaN ( Not a Number dianggap false )
+
+	// String Kosong Petik Dua ( "" )
+
+	let data = "";
+
+	// String Kosong Petik Satu ( '' )
+	
+	data = '';
+
+	// String Kosong Backtick ( `` )
+	
+	data = ``;
+
+	// Boolean False ( false )
+	
+	data = false;
+
+	// Number Positif 0 ( 0 )
+	
+	data = 0;
+
+	// Number Negatif -0 ( -0 )
+	
+	data = -0;
+
+	// Data Null ( null )
+	
+	data = null;
+
+	// Data Undefined ( undefined )
+	
+	data = undefined;
+
+	// Data Not A Number ( NaN )
+	
+	data = Number("angka Satu");
+
+	if ( data ) {
+		document.writeln(`<h1>TRUE</h1>`);
+	} else {
+		document.writeln(`<h1>FALSE</h1>`);
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Truthy</title>
+</head>
+<body>
+<script>
+	
+	// Truthy adalah kebalikan dari falsy, dimana data nya dianggap bernilai true
+	// Untuk mengetahui sebuah data itu adalah truthy, yaitu data yang bukan bernilai falsy 
+
+	// String Bukan Kosong Petik Dua ( "Ini Truthy" )
+
+	let data = "Ini Truthy";
+
+	// String Bukan Kosong Petik Satu ( 'Ini Truthy' )
+	
+	data = 'Ini Truthy';
+
+	// String Bukan Kosong Backtick ( `Ini Truthy` )
+	
+	data = `Ini Truthy`;
+
+	// Boolean True ( true )
+	
+	data = true;
+
+	// Number Positif 123456789 ( 123456789 )
+	
+	data = 123456789;
+
+	// Number Negatif -123456789 ( -123456789 )
+	
+	data = -123456789;
+
+	// Data Bukan Null ( !null )
+	
+	data = !null;
+
+	// Data Bukan Undefined ( !undefined )
+	
+	data = !undefined;
+
+	// Data Array Kosong ( [] )
+	
+	data = [];
+
+	// Data Object Kosong ( {} )
+	
+	data = {};
+
+	if ( data ) {
+		document.writeln(`<h1>TRUE</h1>`);
+	} else {
+		document.writeln(`<h1>FALSE</h1>`);
+	}
+
+</script>
+</body>
+</html>
