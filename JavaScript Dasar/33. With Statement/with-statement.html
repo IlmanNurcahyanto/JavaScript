@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>With Statement</title>
+</head>
+<body>
+<script>
+	
+	// With Statement merupakan fitur yang digunakan untuk menurunkan sebuah Scope Data
+	// Dengan menggunakan With Statement, Kita bisa mengakses Property dalam sebuah Data tanpa harus menyebut Datanya
+
+	const murid = {
+		namaDepan : "Ilman",
+		namaTengah : "Nur",
+		namaBelakang : "Cahyanto"
+	};
+
+	// Tanpa Menggunakan With Statement
+
+	console.info(murid.namaDepan);
+	console.info(murid.namaTengah);
+	console.info(murid.namaBelakang);
+
+	// Dengan Menggunakan With Statement
+	
+	with( murid ) {
+	console.info(namaDepan);
+	console.info(namaTengah);
+	console.info(namaBelakang);
+	}
+
+	// With Statement Tidak Direkomendasikan
+	// Walaupun fitur With Statement ini sangat menarik
+	// Namun kebanyakan orang tidak merekomendasikan penggunaan With Statement
+	// Hal ini dikarenakan With Statement kadang membuat sebuah kode menjadi ambigu
+
+</script>
+</body>
+</html>
