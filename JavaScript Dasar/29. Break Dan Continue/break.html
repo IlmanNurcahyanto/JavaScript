@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Break</title>
+</head>
+<body>
+<script>
+	
+	// Pada Switch Statement, Kita sudah mengenal kata kunci break, yaitu untuk menghentikan case dalam switch
+	// Sama dengan pada perulangan, Break juga digunakan untuk menghentikan seluruh perulangan.
+	// Namun berbeda dengan Continue, Continue digunakan untuk menghentikan perulangan saat ini,
+	// Lalu melanjutkan ke perulangan selanjutnya
+
+	let angka = 1;
+
+	while ( true ) {
+		document.writeln(`<p>Pengulangan Nomor Ke-${angka}</p>`);
+		angka++;
+
+		if ( angka > 10 ) {
+			break;
+		}
+	}
+
+</script>
+</body>
+</html>
