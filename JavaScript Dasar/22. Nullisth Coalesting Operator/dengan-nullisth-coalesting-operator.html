@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dengan Nullisth Coalesting Operator</title>
+</head>
+<body>
+<script>
+
+	// Nullist value adalah null dan undefined
+	// Nullist Coalescing Operator (??) adalah operator mirip dengan ternary operator, yang membedakan adalah pada kondisi
+	// Jika bernilai Null atau Undefined, baru value default nya diambil
+
+	let parameter;
+
+	let data = parameter ?? "Nilai Default";
+
+	document.writeln(`<p>${data}</p>`); // Nilai Default
+
+</script>
+</body>
+</html>
