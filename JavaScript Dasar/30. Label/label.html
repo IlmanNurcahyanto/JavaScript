@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Label</title>
+</head>
+<body>
+<script>
+
+	/*
+
+	- Label merupakan penanda yang bisa digunakan dengan kata kunci Break dan Continue
+	- Secara default saat kita melakukan Break atau Continue,
+	- Dia akan melakukan terhadap perulangan dimana kode Break dan Continue itu digunakan
+	- Dengan menggunakan label, kita bisa melakukan Break dan Continue terhadap perulangan yang kita inginkan,
+	- Asalkan pada perulangannya kita gunakan Label
+	- Untuk membuat Label, kita bisa gunakan nama label lalu diikuti dengan Titik Dua ( : )
+
+	*/
+	
+	loop_i:
+	for ( let i = 0; i < 10; i++ ) {
+		loop_j:
+		for ( let j = 0; j < 100; j++ ) {
+			if ( j > 10 ) {
+				continue loop_i;
+			}
+		console.info(`${i} - ${j}`);
+	}
+}
+
+</script>
+</body>
+</html>
