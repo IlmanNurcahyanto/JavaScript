@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default Parameter</title>
+</head>
+<body>
+<script>
+	
+	// Parameter juga bisa kita beri Default Value,
+	// Artinya jika ketika kita tidak mengirim data ke Parameter atau kita mengirim data Undefined,
+	// Maka secara otomatis Parameter akan diisi oleh Default Value
+
+	function namaLengkap(namaDepan , namaBelakang = "NURCAHYANTO") {
+		document.writeln(`<p>${namaDepan}</p>`);
+		document.writeln(`<p>${namaBelakang}</p>`);
+	}
+
+	namaLengkap("ILMAN"); // ILMAN // NURCAHYANTO
+	namaLengkap("ILMAN" , "NUR"); // ILMAN // NUR
+
+</script>
+</body>
+</html>
