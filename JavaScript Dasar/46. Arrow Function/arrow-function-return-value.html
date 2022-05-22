@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrow Function Return Value</title>
+</head>
+<body>
+<script>
+	
+	// Arrow Function adalah alternatif pembuatan Function yang lebih sederhana dari Function biasanya
+	// Namun terdapat Limitasi dan juga tidak bisa digunakan di semua Situasi
+	// Dinamakan Arrow Function karena menggunakan tanda anak panah ( => )
+
+	// Kekurangan Arrow Function :
+	// - Tidak memiliki fitur Arguments Object
+	// - Tidak bisa menggunakan Function Generator
+	// - Tidak bisa mengakses this
+	// - Tidak bisa mengakses super
+
+	// Cara Membuat Arrow Function Return Value
+	// Jika menggunakan block, Maka kita perlu menggunakan kata kunci Return
+	// Jika tidak menggunakan block, Kita tidak perlu menggunakan kata kunci Return
+
+	// Menggunakan Block
+
+	const penjumlahan = (nilaiSatu, nilaiDua) => {
+		return nilaiSatu + nilaiDua;
+	}
+
+	console.info(penjumlahan(500, 500)); // 1000
+
+	// Tidak Menggunakan Block
+
+	const perkalian = (nilaiSatu, nilaiDua) => nilaiSatu * nilaiDua;
+
+	console.info(perkalian(25, 4)); // 100
+
+</script>
+</body>
+</html>

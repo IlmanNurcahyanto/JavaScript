@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrow Function Tanpa Block</title>
+</head>
+<body>
+<script>
+	
+	// Arrow Function adalah alternatif pembuatan Function yang lebih sederhana dari Function biasanya
+	// Namun terdapat Limitasi dan juga tidak bisa digunakan di semua Situasi
+	// Dinamakan Arrow Function karena menggunakan tanda anak panah ( => )
+
+	// Kekurangan Arrow Function :
+	// - Tidak memiliki fitur Arguments Object
+	// - Tidak bisa menggunakan Function Generator
+	// - Tidak bisa mengakses this
+	// - Tidak bisa mengakses super
+
+	// Cara Membuat Arrow Function Tanpa Block
+	// Jika sebuah Arrow Function isinya sederhana, Misal hanya satu baris
+
+	const namaLengkap = (nama) => console.info(`Hallo ${nama}`);
+
+	namaLengkap("Ilman Nurcahyanto"); // Hallo Ilman Nurcahyanto
+
+</script>
+</body>
+</html>
