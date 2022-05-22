@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function Generator Kompleks</title>
+</head>
+<body>
+<script>
+	
+	// Function Generator adalah Function yang digunakan untuk membuat Data Generator
+	// Generator adalah Data yang bisa di Interasi seperti Array
+	// Untuk membuat Function Generator, Kita perlu menggunakan tanda bintang ( * ) setelah kata Function
+	// Dan untuk mengembalikan Data di tiap Iterasi, Kita bisa gunakan kata kunci Yield diikuti Datanya
+
+	// Function Generator Kompleks
+
+	function* buatGanjil(value) {
+		for ( let i = 1; i <= value; i++) {
+			if ( i % 2 === 1 ) {
+				yield i;
+			}
+		}
+	}
+
+	const numbers = buatGanjil(100);
+//	for ( const number of numbers ) {
+//		console.info(number);
+//	}
+
+	// Lazy Generator
+	console.info(numbers.next().value); // 1
+	console.info(numbers.next().value); // 3
+	console.info(numbers.next().value); // 5
+	console.info(numbers.next().value); // 7
+	console.info(numbers.next().value); // 9
+
+</script>
+</body>
+</html>
