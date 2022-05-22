@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function Dalam Function</title>
+</head>
+<body>
+<script>
+	
+	// Function yang terdapat di dalam Function disebut Inner Function
+	// Inner Function hanya bisa diakses di tempat kita membuat Function nya,
+	// Tidak bisa diakses dari luar Function nya
+
+	function luar() {
+
+		function dalam() {
+			console.info("Function Di Dalam");
+		}
+
+		dalam(); // Function Di Dalam
+		dalam(); // Function Di Dalam
+
+	}
+
+	luar();
+	dalam(); // Error
+
+</script>
+</body>
+</html>
