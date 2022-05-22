@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Optional Parameter</title>
+</head>
+<body>
+<script>
+	
+	// Secara default, Parameter di Function itu optional
+	// Jika tidak ada Value yang kita kirim ke Parameter ketika memanggil Function,
+	// Maka secara otomatis Parameter tersebut bernilai Undefined
+
+	function namaLengkap (namaDepan , namaTengah , namaBelakang) {
+		document.writeln(`<p>${namaDepan}</p>`);
+		document.writeln(`<p>${namaTengah}</p>`);
+		document.writeln(`<p>${namaBelakang}</p>`);
+	}
+
+	namaLengkap(); // Undefined
+
+</script>
+</body>
+</html>
