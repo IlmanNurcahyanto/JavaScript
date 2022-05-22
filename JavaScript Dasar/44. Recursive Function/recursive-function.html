@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recursive Function</title>
+</head>
+<body>
+<script>
+	
+	// Recursive Function adalah kemampuan Function memanggil Function dirinya sendiri
+	// Seperti contohnya kasus Factorial
+
+	// Factorial Loop
+
+	function factorial(value) {
+		let result = 1;
+		for ( let i = 1; i <= value; i++) {
+			result *= i;
+		}
+		return result;
+	}
+
+	console.info(factorial(5));
+	console.info(1 * 2 * 3 * 4 * 5);
+
+	// Factorial Recursive
+
+	function factorialRecursive(value) {
+		if ( value === 1 ) {
+			return 1;
+		} else {
+			return value * factorialRecursive( value - 1 );
+		}
+	}
+
+	console.info(factorialRecursive(7));
+
+</script>
+</body>
+</html>
