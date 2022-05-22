@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arguments Object</title>
+</head>
+<body>
+<script>
+	
+	// Sebelum ada fitur Rest Parameter,
+	// Di JavaScript sudah ada fitur yang bernama Arguments Object
+	// Ini adalah fitur dimana kita bisa mengambil semua Parameter dalam bentuk Array dengan menggunakan Object bernama Arguments
+
+	function penjumlahanLama() {
+		let total = 0;
+		for ( const argument of arguments) {
+			total += argument;
+		}
+		document.writeln(`<p>${total}</p>`);
+	}
+
+	penjumlahanLama(10,15,20,25,30); // 100
+	penjumlahanLama(10,20,30,40,50); // 150
+	penjumlahanLama(50,100,150,200,250); // 750
+
+</script>
+</body>
+</html>

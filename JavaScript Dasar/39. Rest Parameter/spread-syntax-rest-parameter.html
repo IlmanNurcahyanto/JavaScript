@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spread Syntax Rest Parameter</title>
+</head>
+<body>
+<script>
+	
+	// Jika terlanjur memiliki data berupa Array
+	// Maka kita juga bisa mengirim Array ke Rest Parameter
+	// Dengan cara menggunakan titik tiga kali ( ... ) diikuti dengan Array nya ketika memanggil Function
+	// Fitur ini dinamakan Spread Syntax
+
+	function jumlah(nama , ...data) {
+		let total = 0;
+		for ( const item of data) {
+			total += item;
+		}
+		document.writeln(`<p>Total : ${nama} = ${total}</p>`);
+	}
+
+	jumlah("Apel" , ...[10,15,20,25,30]); // Total : Apel = 100
+	jumlah("Pisang" , ...[10,20,30,40,50]); // Total : Pisang = 150
+	jumlah("Anggur" , ...[50,100,150,200,250]); // Total : Anggur = 750
+
+</script>
+</body>
+</html>

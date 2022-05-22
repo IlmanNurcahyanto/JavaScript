@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rest Parameter</title>
+</head>
+<body>
+<script>
+	
+	// Rest Parameter adalah fitur dimana kita bisa mengirim data sebanyak-banyak nya pada satu Parameter,
+	// Dan secara otomatis akan di konversi menjadi Array
+	
+	// Ketentuan Rest Parameter
+	// - Rest Parameter hanya boleh ada satu di Function
+	// - Tidak boleh lebih dari satu
+	// - Rest Parameter hanya boleh berada di posisi paling akhir
+	// - Tidak boleh di depan atau di tengah, Kecuali memang cuma ada 1 Parameter
+
+	function jumlah(nama , ...data) {
+		let total = 0;
+		for ( const item of data) {
+			total += item;
+		}
+		document.writeln(`<p>Total : ${nama} = ${total}</p>`);
+	}
+
+	jumlah("Apel" , 10,15,20,25,30); // Total : Apel = 100
+	jumlah("Pisang" , 10,20,30,40,50); // Total : Pisang = 150
+	jumlah("Anggur" , 50,100,150,200,250); // Total : Anggur = 750
+
+</script>
+</body>
+</html>
