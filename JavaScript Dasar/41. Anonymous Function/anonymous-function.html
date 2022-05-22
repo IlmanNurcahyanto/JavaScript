@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anonymous Function</title>
+</head>
+<body>
+<script>
+	
+	// Selain membuat Function dengan nama,
+	// Kita juga bisa membuat Function tanpa nama Function ( Anonymous Function )
+
+	// Anonymous Function Di Variable
+
+	const hallo = function(nama) {
+		document.writeln(`<p>Hallo, Nama Saya Adalah ${nama}</p>`);
+	}
+
+	hallo("Ilman");
+	hallo("Nur");
+
+	// Anonymous Function Di Parameter
+
+	function giveMeName(callback) {
+		callback("ILMAN");
+	}
+
+	giveMeName(function(nama){
+		document.writeln(`Hai, Nama Saya Adalah ${nama}</p>`);
+	});
+
+</script>
+</body>
+</html>
