@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menghentikan Eksekusi Dengan Return</title>
+</head>
+<body>
+<script>
+
+	// Kata Kunci Return juga bisa digunakan untuk menghentikan eksekusi sebuah Function
+
+	// Cara Menghentikan Eksekusi Dengan Return
+
+	function isContains(array , searchValue) {
+		for ( const element of array ) {
+			if ( element === searchValue ) {
+				return true;
+			}			
+		}
+		return false;
+	}
+
+	const array = [1,3,4,6,8,10,12,14,16,18,20];
+	let search = 5;
+	const found = isContains(array, search);
+	document.writeln(`<p>${found}</p>`); // false
+
+</script>
+</body>
+</html>

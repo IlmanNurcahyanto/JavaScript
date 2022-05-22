@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function Return Value</title>
+</head>
+<body>
+<script>
+	
+	// Cara Membuat Function Dengan Parameter Dan Return Value
+
+	function namaLengkap(namaDepan , namaBelakang) {
+		const ucapan = `<p>Halo, Nama Saya Adalah "${namaDepan} ${namaBelakang}". Saya Sedang Belajar Bahasa JavaScript Dasar</p>`;
+		return ucapan;
+	}
+
+	// Cara Memanggil Function Dan Menangkap Return Value Nya
+
+	const hasil = namaLengkap("Ilman" , "Nurcahyanto");
+	document.writeln(`<p>${hasil}</p>`);
+		
+</script>
+</body>
+</html>
