@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Strict Mode</title>
+</head>
+<body>
+<script>
+	
+	// Untuk menyalakan Strict Mode,
+	// Kita bisa menambahkan `use strict` pada baris awal file javascript kita
+	// Atau bisa juga ditambahkan di awal function kita
+
+	function useStrictMode() {
+		'use strict'
+		const person = {
+			firstName : "Ilman"
+		};
+
+		// Error
+		with (person) {
+			console.info(firstName);
+		}
+	};
+
+	useStrictMode();
+
+</script>
+</body>
+</html>
