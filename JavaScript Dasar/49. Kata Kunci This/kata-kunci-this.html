@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kata Kunci This</title>
+</head>
+<body>
+<script>
+	
+	// Kata Kunci This adalah Referensi ke Object milik siapa
+	// Tiap lokasi Kata Kunci This, Bisa berbeda-beda Referensi pemilik nya
+
+	console.info(this); // Global Scope ( Window )
+
+	function sample() {
+		console.info(this); // Lokal Scope ( Window )
+
+		function inner() {
+			console.info(this); // Nested Function ( Window )
+		}
+
+		inner();
+	}
+
+	sample();
+
+	const person = {
+		name : "Ilman",
+		sayHello : function (value) {
+			console.info(`Hello ${value} My Name Is ${this.name}`);
+		}
+	};
+
+	person.sayHello("Nurcahyanto"); // Hello Nurcahyanto My Name Is Ilman
+
+</script>
+</body>
+</html>
