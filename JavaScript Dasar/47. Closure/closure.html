@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Closure</title>
+</head>
+<body>
+<script>
+	
+	// Kita sudah tahu bahwa Local Scope tidak bisa diakses di luar Scope nya
+	// Dengan kemampuan Closure,
+	// Kita bisa membuat sebuah Function di Local Scope dan Referensi ke Data di sekitar Local Scope tersebut, keluar Scope nya
+
+	function createAder(value) {
+		const owner = "Ilman";
+
+		function add(param) {
+			console.info(owner); // Ilman
+			return value + param;
+		}
+
+		return add;
+	}
+
+	const addTwo = createAder(2);
+	console.info(addTwo(10)); // 12
+	console.info(addTwo(20)); // 22
+
+</script>
+</body>
+</html>
