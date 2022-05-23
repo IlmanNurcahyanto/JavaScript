@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default Value Destructuring Array</title>
+</head>
+<body>
+<script>
+	
+	/*
+	Kita juga bisa menambahkan Default Value
+	Jadi misal kita kita melakukan Destructuring terhadap Array,
+	Ternyata tidak ada Datanya, Maka kita bisa menambahkan Default Value
+	Begitu juga pada Object,
+	Jika ternyata Property nya tidak ada, Maka kita bisa menambahkan Default Value
+	*/
+
+	// Cara Membuat Default Value Destructuring Array
+
+	const names = ["Ilman"];
+	const [firstName, middleName = "Nur", lastName = "Cahyanto"] = names;
+
+	console.info(firstName);
+	console.info(middleName);
+	console.info(lastName);
+
+</script>
+</body>
+</html>

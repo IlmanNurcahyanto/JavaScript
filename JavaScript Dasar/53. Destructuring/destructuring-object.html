@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Destructuring Object</title>
+</head>
+<body>
+<script>
+	
+	/*
+	Destructuring adalah fitur yang bisa digunakan untuk membongkar value-value di Array atau Object ke dalam Variable-Variable
+	Fitur ini sangat mempermudah kita ketika ingin mengambil data dari Array atau Object tanpa harus melakukan pengambilan data satu persatu
+	*/
+
+	// Mengambil Data Di Object Manual Tanpa Destructuring
+
+	/*
+	const person = {
+		firstName : "Ilman",
+		lastName : "Nurcahyanto",
+		address : {
+			street : "Jalan Raya No 120",
+			city : "Mojokerto",
+			country : "Indonesia"
+		},
+		hobby : "JavaScript",
+		channel : "Tidak Ada"
+	};
+
+	const firstName = person.firstName;
+	const lastName = person.lastName;
+
+	console.info(firstName);
+	console.info(lastName);
+	*/
+
+	// Mengambil Data Di Object Menggunakan Destructuring
+
+	/*
+	const person = {
+		firstName : "Ilman",
+		lastName : "Nurcahyanto",
+		address : {
+			street : "Jalan Raya No 120",
+			city : "Mojokerto",
+			country : "Indonesia"
+		},
+		hobby : "JavaScript",
+		channel : "Tidak Ada"
+	};
+
+	const {firstName, lastName, address, ...others} = person;
+
+	console.info(firstName);
+	console.info(lastName);
+	console.info(address);
+	console.info(others);
+	*/
+
+	// Mengambil Data Di Nested Object Menggunakan Destructuring
+
+	const person = {
+		firstName : "Ilman",
+		lastName : "Nurcahyanto",
+		address : {
+			street : "Jalan Raya No 120",
+			city : "Mojokerto",
+			country : "Indonesia"
+		},
+		hobby : "JavaScript",
+		channel : "Tidak Ada"
+	};
+
+	const {firstName, lastName, address:{city, street, country}, ...others} = person;
+
+	console.info(firstName);
+	console.info(lastName);
+	console.info(city);
+	console.info(street);
+	console.info(country);
+	console.info(others);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default Value Destructuring Object</title>
+</head>
+<body>
+<script>
+	
+	/*
+	Kita juga bisa menambahkan Default Value
+	Jadi misal kita kita melakukan Destructuring terhadap Array,
+	Ternyata tidak ada Datanya, Maka kita bisa menambahkan Default Value
+	Begitu juga pada Object,
+	Jika ternyata Property nya tidak ada, Maka kita bisa menambahkan Default Value
+	*/
+
+	// Cara Membuat Default Value Destructuring Object
+
+	const person = {
+		firstName : "Ilman",
+		lastName : "Cahyanto"
+	};
+
+	let {firstName, middleName = "Nur", lastName} = person;
+
+	console.info(firstName);
+	console.info(middleName);
+	console.info(lastName);
+
+</script>
+</body>
+</html>

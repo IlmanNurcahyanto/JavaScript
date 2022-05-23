@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Destructuring Function Parameter</title>
+</head>
+<body>
+<script>
+	
+	/*
+	Destructuring tidak hanya bisa dilakukan di Variable, Tapi juga bisa dilakukan di Function Parameter
+	Hal ini membuat kita mudah ketika ingin mengambil Nested Data dalam Array atau Object dalam Function
+	*/
+
+	// Mengambil Data Di Function Parameter Manual Tanpa Destructuring
+
+	/*
+	function displayPerson(person) {
+		console.info(person.firstName);
+		console.info(person.middleName);
+		console.info(person.lastName);
+	}
+
+	const person = {
+		firstName : "Ilman",
+		middleName : "Nur",
+		lastName : "Cahyanto"
+	};
+
+	displayPerson(person);
+	*/
+
+	// Mengambil Data Di Function Parameter Menggunakan Destructuring
+
+	function displayPerson({firstName, middleName, lastName}) {
+		console.info(firstName);
+		console.info(middleName);
+		console.info(lastName);
+	}
+
+	const person = {
+		firstName : "Ilman",
+		middleName : "Nur",
+		lastName : "Cahyanto"
+	};
+
+	displayPerson(person);
+
+	// Contoh Lainnya
+
+	function sum([first, second]) {
+		return first + second;
+	}
+
+	console.info(sum([1,1]));
+	console.info(sum([10,10]));
+
+</script>
+</body>
+</html>
